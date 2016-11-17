@@ -52,6 +52,14 @@ a {
 		background:rgba(80,120,255,0.05);
 	}
 
+#wrapperAddUser {
+	display: none;
+}
+
+#wrapperUpdateUser {
+	display: none;	
+}
+
 fieldset {
 	border:0;
 	padding:0; margin:0;

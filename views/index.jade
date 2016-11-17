@@ -30,19 +30,42 @@ block content
 					th UserName
 					th Email
 					th Delete?
+					th Update?
 				tbody
 
+		button#buttonNewUser New User
+		br
+
 		// ADD USER
-		h2 Add User
-		#addUser
-			fieldset
-				input#inputUserName(type='text', placeholder='Username')
-				input#inputUserEmail(type='text', placeholder='Email')
-				br
-				input#inputUserFullname(type='text', placeholder='Full Name')
-				input#inputUserAge(type='text', placeholder='Age')
-				br
-				input#inputUserLocation(type='text', placeholder='Location')
-				input#inputUserGender(type='text', placeholder='gender')
-				br
-				button#btnAddUser Add User
+		#wrapperAddUser
+			h2 Add User
+			#addUser
+				fieldset
+					input#inputUserName(type='text', placeholder='Username')
+					input#inputUserEmail(type='email', placeholder='Email')
+					br
+					input#inputUserFullname(type='text', placeholder='Full Name')
+					input#inputUserAge(type='text', placeholder='Age')
+					br
+					input#inputUserLocation(type='text', placeholder='Location')
+					input#inputUserGender(type='text', placeholder='gender')
+					br
+					button#btnAddUser Add User
+
+		br
+
+		// UPDATE USER
+		#wrapperUpdateUser
+			h2 Update User
+			#updateUser
+				fieldset
+					input#inputUserName(type='text', placeholder='Username')
+					input#inputUserEmail(type='email', placeholder='Email')
+					br
+					input#inputUserFullname(type='text', placeholder='Full Name')
+					input#inputUserAge(type='text', placeholder='Age')
+					br
+					input#inputUserLocation(type='text', placeholder='Location')
+					input#inputUserGender(type='text', placeholder='gender')
+					br
+					button#btnUpdateUser Update User

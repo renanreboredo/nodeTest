@@ -16,6 +16,19 @@ $(document).ready(function(){
 	// Delete User link click
 	$('#userList table tbody').on('click', 'td a.linkdeleteuser', deleteUser);
 
+	// Update User link click
+	//$('#userList table tbody').on('click', 'td a')
+	
+	// Show Add User Form
+	$('#buttonNewUser').on('click', function(){
+		if ($('#wrapperAddUser').css('display') === 'none'){
+			$('#wrapperAddUser').css('display','block');
+		}
+		else {
+			$('#wrapperAddUser').css('display','none');
+		}
+	});
+
 });
 
 // Functions =================================
@@ -37,6 +50,7 @@ var populateTable = function (){
           tableContent += '<td><a href="#" class="linkshowuser" rel="' + this.username + '">' + this.username + '</a></td>';
           tableContent += '<td>' + this.email + '</td>';
           tableContent += '<td><a href="#" class="linkdeleteuser" rel="' + this._id + '">delete</a></td>';
+					tableContent += '<td><a href="#" class="linkupdateuser" rel="' + this._id + '">update</a></td>';
           tableContent += '</tr>';
       });
 
